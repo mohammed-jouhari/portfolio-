@@ -25,32 +25,67 @@ const cvData = {
     }
   },
   professionalExperience: [
-    {
-      title: "Assistant Professor",
-      organization: "Faculty of Sciences, University",
-      location: "City, Country",
-      start: "2024",
-      end: "Present",
-      details: [
-        "Teach courses in cybersecurity, distributed systems and intelligent networks",
-        "Supervise Master’s theses and doctoral dissertations",
-        "Engage in IoT and sensor‑network research projects"
-      ]
-    },
-    {
-      title: "Assistant Professor",
-      organization: "Engineering School",
-      location: "City, Country",
-      start: "2023",
-      end: "2024",
-      details: [
-        "Delivered courses on Unix systems, application security and virtualization",
-        "Supervised undergraduate final‑year projects",
-        "Contributed to curriculum development and innovative teaching methods"
-      ]
-    }
-    /* Additional experience entries... */
-  ],
+  {
+    title: "Assistant Professor",
+    organization: "Faculty of Sciences, Ibn Tofail University",
+    location: "Kenitra, Morocco",
+    start: "2024",
+    end: "Present",
+    details: [
+      "Teaching courses in cybersecurity, distributed systems, and intelligent networks.",
+      "Supervising Master’s theses and doctoral dissertations.",
+      "Engaged in IoT and sensor network research projects and co-organizer of scientific events and workshops."
+    ]
+  },
+  {
+    title: "Assistant Professor",
+    organization: "Moroccan School of Engineering Sciences (EMSI)",
+    location: "Tangier, Morocco",
+    start: "2023",
+    end: "2024",
+    details: [
+      "Delivered courses on Unix systems, application security, and virtualization.",
+      "Supervised undergraduate final-year projects.",
+      "Contributed to the development of curricula and innovative teaching methods."
+    ]
+  },
+  {
+    title: "Postdoctoral Researcher",
+    organization: "Mohammed VI Polytechnic University (UM6P)",
+    location: "Benguerir, Morocco",
+    start: "2021",
+    end: "2023",
+    details: [
+      "Conducted research on machine learning for energy-efficient IoT and sensor networks.",
+      "Published results in indexed journals and presented at international conferences.",
+      "Collaborated with national and international research teams."
+    ]
+  },
+  {
+    title: "Postdoctoral Researcher",
+    organization: "Qatar University",
+    location: "Doha, Qatar",
+    start: "2020",
+    end: "2021",
+    details: [
+      "Developed AI-based methods for drones and intelligent surveillance systems.",
+      "Coordinated funded projects and contributed to joint international publications.",
+      "Supervised Master’s students in computer science."
+    ]
+  },
+  {
+    title: "Adjunct Lecturer",
+    organization: "Ibn Tofail University",
+    location: "Kenitra, Morocco",
+    start: "2017",
+    end: "2020",
+    details: [
+      "Taught courses in data security, VoIP, and IPv6 for undergraduate and graduate students.",
+      "Conducted research on underwater wireless sensor networks.",
+      "Supervised research projects and Master’s theses."
+    ]
+  }
+],
   education: [
     {
       degree: "PhD in Computer Science",
