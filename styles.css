@@ -29,32 +29,22 @@ header.hero {
   padding: 0 20px;
 }
 
-.hero h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
+.hero h1 { margin: 0; font-size: 2.5rem; }
+.hero .subtitle { margin-top: 10px; font-size: 1.2rem; font-style: italic; }
 
-.hero .subtitle {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  font-style: italic;
-}
-
-.navigation {
-  margin-top: 20px;
-}
-
+.navigation { margin-top: 20px; }
 .navigation a {
   color: #fff;
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
 }
-
-main section {
-  margin: 40px 0;
+.navigation a.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
+main section { margin: 40px 0; }
 main h2 {
   color: var(--primary-color);
   border-bottom: 2px solid var(--secondary-color);
@@ -63,51 +53,27 @@ main h2 {
 }
 
 /* timeline styling */
-.timeline {
-  position: relative;
-  padding-left: 20px;
-}
-
+.timeline { position: relative; padding-left: 20px; }
 .timeline::before {
   content: '';
-  position: absolute;
-  top: 0;
-  left: 9px;
-  width: 2px;
-  height: 100%;
+  position: absolute; top: 0; left: 9px;
+  width: 2px; height: 100%;
   background-color: var(--secondary-color);
 }
-
-.timeline-item {
-  margin-bottom: 20px;
-  position: relative;
-  padding-left: 20px;
-}
-
+.timeline-item { margin-bottom: 20px; position: relative; padding-left: 20px; }
 .timeline-item::before {
   content: '';
-  position: absolute;
-  left: -2px;
-  top: 5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+  position: absolute; left: -2px; top: 5px;
+  width: 10px; height: 10px; border-radius: 50%;
   background-color: var(--primary-color);
 }
+.timeline-item h3 { margin: 0; font-size: 1.1rem; }
+.date-range { font-weight: bold; color: var(--secondary-color); }
+.timeline-item p { margin: 5px 0 0 0; font-size: 0.95rem; }
 
-.timeline-item h3 {
-  margin: 0;
-  font-size: 1.1rem;
-}
+/* one-section-at-a-time */
+.section { display: none; opacity: 0; transition: opacity .2s ease-in-out; }
+.section.active { display: block; opacity: 1; }
 
-.date-range {
-  font-weight: bold;
-  color: var(--secondary-color);
-}
-
-.timeline-item p {
-  margin: 5px 0 0 0;
-  font-size: 0.95rem;
-}
-
-/* other styles omitted for brevity */
+/* footer */
+.footer { padding: 30px 0; text-align: center; color: #666; }
