@@ -127,7 +127,7 @@ const cvData = {
     }
   ],
 
-  publications: {
+  publications: { 
   journals: [
     {
       authors: "Hafsa Benaddi; Mohammed Jouhari; Omar Elharrouss",
@@ -151,7 +151,7 @@ const cvData = {
         volume: 25,
         number: 3,
         pages: "1841–1876",
-        doi: "10.1109/COMST.2023.3274934",
+        doi: "https://doi.org/10.1109/COMST.2023.3274934",
         url: "https://ieeexplore.ieee.org/abstract/document/10122600",
         impactFactor: 33.84
       }
@@ -165,7 +165,7 @@ const cvData = {
         volume: 22,
         number: 21,
         pages: "8085",
-        doi: "10.3390/s22218085",
+        doi: "https://doi.org/10.3390/s22218085",
         url: "https://www.mdpi.com/1424-8220/22/21/8085",
         impactFactor: 3.847
       }
@@ -179,7 +179,7 @@ const cvData = {
         volume: 71,
         number: 10,
         pages: "11089–11102",
-        doi: "10.1109/TVT.2022.3186834",
+        doi: "https://doi.org/10.1109/TVT.2022.3186834",
         url: "https://ieeexplore.ieee.org/abstract/document/9809923",
         impactFactor: 5.978
       }
@@ -193,7 +193,7 @@ const cvData = {
         volume: 9,
         number: 2,
         pages: "1227–1242",
-        doi: "10.1109/JIOT.2021.3079164",
+        doi: "https://doi.org/10.1109/JIOT.2021.3079164",
         url: "https://ieeexplore.ieee.org/abstract/document/9428021",
         impactFactor: 9.936
       }
@@ -206,7 +206,7 @@ const cvData = {
       details: {
         volume: 7,
         pages: "96879–96899",
-        doi: "10.1109/ACCESS.2019.2928876",
+        doi: "https://doi.org/10.1109/ACCESS.2019.2928876",
         url: "https://ieeexplore.ieee.org/abstract/document/8763947",
         impactFactor: 4.098
       }
@@ -220,7 +220,7 @@ const cvData = {
         volume: 32,
         number: 13,
         pages: "e3971",
-        doi: "10.1002/dac.3971",
+        doi: "https://doi.org/10.1002/dac.3971",
         url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/dac.3971",
         impactFactor: 1.278
       }
@@ -243,7 +243,7 @@ const cvData = {
       year: 2024,
       details: {
         pages: "1–6",
-        doi: "10.1109/WINCOM62286.2024.10655131"
+        doi: "https://doi.org/10.1109/WINCOM62286.2024.10655131"
       }
     },
     {
@@ -253,7 +253,7 @@ const cvData = {
       year: 2024,
       details: {
         pages: "1–6",
-        doi: "10.1109/WINCOM62286.2024.10658099"
+        doi: "https://doi.org/10.1109/WINCOM62286.2024.10658099"
       }
     },
     {
@@ -263,7 +263,7 @@ const cvData = {
       location: "Ayia Napa, Cyprus",
       year: 2024,
       details: {
-        doi: "10.1109/IWCMC61514.2024.10592352",
+        doi: "https://doi.org/10.1109/IWCMC61514.2024.10592352",
         url: "https://ieeexplore.ieee.org/document/10592352"
       }
     },
@@ -274,7 +274,7 @@ const cvData = {
       location: "Kuala Lumpur, Malaysia",
       year: 2023,
       details: {
-        doi: "10.1109/GLOBECOM54140.2023.10437475",
+        doi: "https://doi.org/10.1109/GLOBECOM54140.2023.10437475",
         url: "https://ieeexplore.ieee.org/document/10437475"
       }
     },
@@ -285,7 +285,7 @@ const cvData = {
       location: "Kuala Lumpur, Malaysia",
       year: 2023,
       details: {
-        doi: "10.1109/GLOBECOM54140.2023.10437739",
+        doi: "https://doi.org/10.1109/GLOBECOM54140.2023.10437739",
         url: "https://ieeexplore.ieee.org/document/10437739"
       }
     },
@@ -296,7 +296,7 @@ const cvData = {
       location: "Florence, Italy",
       year: 2023,
       details: {
-        doi: "10.1109/VTC2023-Spring57618.2023.10200189",
+        doi: "https://doi.org/10.1109/VTC2023-Spring57618.2023.10200189",
         url: "https://ieeexplore.ieee.org/document/10200189"
       }
     },
@@ -307,7 +307,7 @@ const cvData = {
       location: "Rome, Italy",
       year: 2023,
       details: {
-        doi: "10.1109/ICC45041.2023.10279198",
+        doi: "https://doi.org/10.1109/ICC45041.2023.10279198",
         url: "https://ieeexplore.ieee.org/document/10279198"
       }
     },
@@ -318,7 +318,7 @@ const cvData = {
       location: "Rio de Janeiro, Brazil",
       year: 2022,
       details: {
-        doi: "10.1109/GLOBECOM48099.2022.10000726",
+        doi: "https://doi.org/10.1109/GLOBECOM48099.2022.10000726",
         url: "https://ieeexplore.ieee.org/abstract/document/10000726"
       }
     },
@@ -329,7 +329,7 @@ const cvData = {
       location: "Seoul, South Korea",
       year: 2022,
       details: {
-        doi: "10.1109/ICC45855.2022.9839233",
+        doi: "https://doi.org/10.1109/ICC45855.2022.9839233",
         url: "https://ieeexplore.ieee.org/abstract/document/9839233"
       }
     },
@@ -340,7 +340,7 @@ const cvData = {
       location: "Kenitra, Morocco",
       year: 2021,
       details: {
-        doi: "10.1109/CommNet52204.2021.9641903",
+        doi: "https://doi.org/10.1109/CommNet52204.2021.9641903",
         url: "https://ieeexplore.ieee.org/abstract/document/9641903"
       }
     },
@@ -351,7 +351,7 @@ const cvData = {
       location: "Abu Dhabi, UAE",
       year: 2018,
       details: {
-        doi: "10.1109/GLOCOM.2018.8647644",
+        doi: "https://doi.org/10.1109/GLOCOM.2018.8647644",
         url: "https://ieeexplore.ieee.org/abstract/document/8647644"
       }
     },
@@ -362,7 +362,7 @@ const cvData = {
       location: "Rabat, Morocco",
       year: 2017,
       details: {
-        doi: "10.1109/WINCOM.2017.8238157",
+        doi: "https://doi.org/10.1109/WINCOM.2017.8238157",
         url: "https://ieeexplore.ieee.org/abstract/document/8238157"
       }
     },
@@ -373,7 +373,7 @@ const cvData = {
       location: "Paphos, Cyprus",
       year: 2016,
       details: {
-        doi: "10.1109/IWCMC.2016.7577089",
+        doi: "https://doi.org/10.1109/IWCMC.2016.7577089",
         url: "https://ieeexplore.ieee.org/abstract/document/7577089"
       }
     },
@@ -384,7 +384,7 @@ const cvData = {
       location: "Marrakech, Morocco",
       year: 2015,
       details: {
-        doi: "10.1109/WINCOM.2015.7381310",
+        doi: "https://doi.org/10.1109/WINCOM.2015.7381310",
         url: "https://ieeexplore.ieee.org/abstract/document/7381310"
       }
     }
@@ -402,7 +402,7 @@ const cvData = {
       publisher: "Springer, Singapore",
       year: 2016,
       details: {
-        doi: "10.1007/978-981-10-1627-1_10",
+        doi: "https://doi.org/10.1007/978-981-10-1627-1_10",
         isbn: "978-981-10-1626-4",
         url: "https://link.springer.com/chapter/10.1007/978-981-10-1627-1_10"
       }
