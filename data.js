@@ -410,79 +410,77 @@ const cvData = {
   ]
 },
 
-  services: {
-    overview:
-      "Extensive involvement in scientific evaluation, including editorial board membership, peer review for leading journals, technical program committee (TPC) service, and chairing conference sessions.",
+services: {
+  overview: "Extensive involvement in scientific evaluation, including editorial board membership, peer review for leading journals, technical program committee (TPC) service, and chairing conference sessions.",
 
-    editorialBoard: [
-      {
-        role: "Editorial Board Member",
-        publication: "Humanities and Social Sciences Communications (Springer Nature)",
-        since: "2025",
-        description:
-          "Developed expertise in editorial decision making, peer review coordination, and quality assurance of manuscripts."
-      }
+  editorialBoard: [
+    {
+      role: "Editorial Board Member",
+      publication: "Humanities and Social Sciences Communications (Springer Nature)",
+      since: "2025",
+      description: "Developed expertise in editorial decision making, peer review coordination, and quality assurance of manuscripts."
+    }
+  ],
+
+  peerReview: {
+    total: "More than 55 reviews",
+    focus: "Particularly in IoT, wireless networks, and cybersecurity.",
+    coreJournals: [
+      { journal: "IEEE Internet of Things Journal", reviews: 11 },
+      { journal: "IEEE Access", reviews: 16 },
+      { journal: "IEEE Wireless Communications", reviews: 3 },
+      { journal: "IEEE Wireless Communications Letters", reviews: 3 },
+      { journal: "IEEE Internet of Things Magazine", reviews: 2 }
     ],
-
-    peerReview: {
-      total: "More than 55 reviews",
-      focus: "Particularly in IoT, wireless networks, and cybersecurity.",
-      coreJournals: [
-        { journal: "IEEE Internet of Things Journal", reviews: 11 },
-        { journal: "IEEE Access", reviews: 16 },
-        { journal: "IEEE Wireless Communications", reviews: 3 },
-        { journal: "IEEE Wireless Communications Letters", reviews: 3 },
-        { journal: "IEEE Internet of Things Magazine", reviews: 2 }
-      ],
-      otherJournals: [
-        "IEEE Transactions on Communications",
-        "IEEE Consumer Electronics",
-        "IEEE Industrial Informatics",
-        "IEEE Information Forensics and Security",
-        "IEEE Mobile Computing",
-        "IEEE Neural Networks and Learning Systems",
-        "IEEE Network and Service Management",
-        "IEEE Services Computing",
-        "IEEE Intelligent Transportation Systems",
-        "Computers & Security (3 reviews)",
-        "International Journal of Communication Systems (4 reviews)",
-        "and others"
-      ]
-    },
-
-    tpc: [
-      { event: "IEEE Globecom", period: "2024–2025" },
-      { event: "IEEE ICC", period: "Ongoing" },
-      { event: "IEEE IWCMC", period: "2023–2025" },
-      { event: "IEEE WINCOM", period: "2023–2025" },
-      { event: "CommNet", period: "2021–2024" }
-    ],
-
-    trackChair: [
-      {
-        event: "Online Workshop on AI-Driven Network Security and Anomaly Detection",
-        conference: "EngiTek 2025",
-        location: "Irbid, Jordan",
-        date: "29–31 December 2025",
-        website: "https://mohammed-jouhari.github.io/nsad2025/"
-      }
-    ],
-
-    sessionChair: [
-      {
-        event: "International Wireless Communications and Mobile Computing Conference (IWCMC)",
-        session: "Online Session 20",
-        date: "May 30, 2024"
-      },
-      {
-        event: "11th International Conference on Wireless Networks and Mobile Communications (WINCOM)",
-        session: "TS8",
-        date: "July 25, 2024"
-      }
+    otherJournals: [
+      "IEEE Transactions on Communications",
+      "IEEE Consumer Electronics",
+      "IEEE Industrial Informatics",
+      "IEEE Information Forensics and Security",
+      "IEEE Mobile Computing",
+      "IEEE Neural Networks and Learning Systems",
+      "IEEE Network and Service Management",
+      "IEEE Services Computing",
+      "IEEE Intelligent Transportation Systems",
+      "Computers & Security (3 reviews)",
+      "International Journal of Communication Systems (4 reviews)",
+      "Others"
     ]
   },
 
-  teaching: [
+  tpc: [
+    { event: "IEEE Globecom", period: "2024–2025" },
+    { event: "IEEE ICC", period: "Ongoing" },
+    { event: "IEEE IWCMC", period: "2023–2025" },
+    { event: "IEEE WINCOM", period: "2023–2025" },
+    { event: "CommNet", period: "2021–2024" }
+  ],
+
+  trackChair: [
+    {
+      event: "Online Workshop on AI-Driven Network Security and Anomaly Detection",
+      conference: "EngiTek 2025",
+      location: "Irbid, Jordan",
+      date: "29–31 December 2025",
+      website: "https://mohammed-jouhari.github.io/nsad2025/"
+    }
+  ],
+
+  sessionChair: [
+    {
+      event: "International Wireless Communications and Mobile Computing Conference (IWCMC)",
+      session: "Online Session 20",
+      date: "May 30, 2024"
+    },
+    {
+      event: "11th International Conference on Wireless Networks and Mobile Communications (WINCOM)",
+      session: "TS8",
+      date: "July 25, 2024"
+    }
+  ]
+},
+
+teaching: [
     {
       course: "Virtualization and Cloud Computing",
       hours: 32,
