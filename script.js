@@ -1,21 +1,22 @@
+// Populate content from cvData (existing logic)
 document.addEventListener('DOMContentLoaded', () => {
+  // name, title, year
   document.getElementById('name').textContent = cvData.personal.fullName;
   document.getElementById('title').textContent = cvData.personal.title;
   document.getElementById('current-year').textContent = new Date().getFullYear();
 
-  // About
+  // about
   document.getElementById('about-content').textContent = cvData.personal.summary;
 
-  // Contact
+  // contact
   const contactList = document.getElementById('contact-list');
   Object.entries(cvData.personal.contact).forEach(([key, value]) => {
     if (!value) return;
     const li = document.createElement('li');
     const label = key.replace(/([A-Z])/g, ' $1');
-    if (value.startsWith('http')) {
+    if (typeof value === 'string' && value.startsWith('http')) {
       const a = document.createElement('a');
-      a.href = value;
-      a.target = '_blank';
+      a.href = value; a.target = '_blank';
       a.textContent = label.charAt(0).toUpperCase() + label.slice(1);
       li.appendChild(a);
     } else {
@@ -24,21 +25,26 @@ document.addEventListener('DOMContentLoaded', () => {
     contactList.appendChild(li);
   });
 
-  // Timeline builder (reused for experience and education)
+  // helper to build timelines
   function buildTimeline(data, containerId) {
     const container = document.getElementById(containerId);
+    if (!Array.isArray(data) || !container) return;
     data.forEach(item => {
       const entry = document.createElement('div');
       entry.className = 'timeline-item';
+
+      const title = item.title || item.degree || '';
+      const org = item.organization || item.institution || '';
       const heading = document.createElement('h3');
-      heading.textContent = `${item.title || item.degree} – ${item.organization || item.institution}`;
+      heading.textContent = `${title} – ${org}`;
       const dateRange = document.createElement('span');
       dateRange.className = 'date-range';
-      dateRange.textContent = `${item.start} – ${item.end}`;
+      dateRange.textContent = `${item.start || ''} – ${item.end || ''}`;
+
       entry.appendChild(heading);
       entry.appendChild(dateRange);
 
-      // Additional details
+      // experience vs education details
       if (item.field) {
         const details = document.createElement('p');
         details.innerHTML = `<strong>Field:</strong> ${item.field}`;
@@ -46,15 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (item.supervisor) details.innerHTML += `<br><strong>Supervisor:</strong> ${item.supervisor}`;
         if (item.distinction) details.innerHTML += `<br><strong>Distinction:</strong> ${item.distinction}`;
         entry.appendChild(details);
-      } else {
+      } else if (item.location) {
         const loc = document.createElement('p');
         loc.style.fontStyle = 'italic';
         loc.textContent = item.location;
         entry.appendChild(loc);
       }
 
-      // Bullet points
-      if (item.details) {
+      if (Array.isArray(item.details)) {
         const ul = document.createElement('ul');
         item.details.forEach(d => {
           const li = document.createElement('li');
@@ -66,34 +71,50 @@ document.addEventListener('DOMContentLoaded', () => {
       container.appendChild(entry);
     });
   }
+
   buildTimeline(cvData.professionalExperience, 'experience-list');
   buildTimeline(cvData.education, 'education-list');
 
-  // Publications
+  // publications
   const pubs = document.getElementById('publications-list');
-  if (cvData.publications.journals.length > 0) {
-    const section = document.createElement('div');
-    section.className = 'publications-category';
-    const heading = document.createElement('h3');
-    heading.textContent = 'International Journals';
-    section.appendChild(heading);
-    const ul = document.createElement('ul');
-    cvData.publications.journals.forEach(article => {
-      const li = document.createElement('li');
-      li.innerHTML = `<strong>${article.authors}</strong>. “${article.title}.” <em>${article.venue}</em> (${article.year}).`;
-      const details = [];
-      if (article.details.volume) details.push(`Vol. ${article.details.volume}`);
-      if (article.details.pages) details.push(`pp. ${article.details.pages}`);
-      if (article.details.doi) details.push(`<a href="${article.details.doi}" target="_blank">DOI</a>`);
-      if (article.details.impactFactor) details.push(`Impact Factor: ${article.details.impactFactor}`);
-      if (details.length > 0) li.innerHTML += ` ${details.join(', ')}`;
-      ul.appendChild(li);
-    });
-    section.appendChild(ul);
-    pubs.appendChild(section);
+  if (pubs && cvData.publications) {
+    if (Array.isArray(cvData.publications.journals) && cvData.publications.journals.length) {
+      const section = document.createElement('div');
+      const h3 = document.createElement('h3'); h3.textContent = 'International Journals';
+      section.appendChild(h3);
+      const ul = document.createElement('ul');
+      cvData.publications.journals.forEach(a => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${a.authors}</strong>. “${a.title}.” <em>${a.venue}</em> (${a.year}).`;
+        const more = [];
+        if (a.details?.volume) more.push(`Vol. ${a.details.volume}`);
+        if (a.details?.pages) more.push(`pp. ${a.details.pages}`);
+        if (a.details?.doi) more.push(`<a href="${a.details.doi}" target="_blank">DOI</a>`);
+        if (a.details?.impactFactor) more.push(`Impact Factor: ${a.details.impactFactor}`);
+        if (more.length) li.innerHTML += ` ${more.join(', ')}`;
+        ul.appendChild(li);
+      });
+      section.appendChild(ul);
+      pubs.appendChild(section);
+    }
+    if (Array.isArray(cvData.publications.conferences) && cvData.publications.conferences.length) {
+      const section = document.createElement('div');
+      const h3 = document.createElement('h3'); h3.textContent = 'International Conferences';
+      section.appendChild(h3);
+      const ul = document.createElement('ul');
+      cvData.publications.conferences.forEach(a => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${a.authors}</strong>. “${a.title}.” <em>${a.venue}</em> (${a.year}).`;
+        if (a.details?.doi) li.innerHTML += ` <a href="${a.details.doi}" target="_blank">DOI</a>`;
+        ul.appendChild(li);
+      });
+      section.appendChild(ul);
+      pubs.appendChild(section);
+    }
   }
 
-  // Conferences (similar logic omitted for brevity)
-
-  // Service, Teaching and Bibliometrics sections use similar loops
-});
+  // services
+  const svc = document.getElementById('service-content');
+  if (svc && cvData.services) {
+    if (Array.isArray(cvData.services.editorialBoard)) {
+      const h3 = document.creat
