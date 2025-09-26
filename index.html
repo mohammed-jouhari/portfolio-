@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1 id="name">Candidate Name</h1>
+      <p id="title" class="subtitle">Early‑Career Editorial Board Member</p>
+      <nav class="navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#services">Service</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#bibliometrics">Bibliometrics</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <div id="about-content"></div>
+    </section>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div id="experience-list" class="timeline"></div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div id="education-list" class="timeline"></div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <div id="publications-list"></div>
+    </section>
+
+    <section id="services">
+      <h2>Editorial & Scientific Service</h2>
+      <div id="service-content"></div>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching Experience</h2>
+      <ul id="teaching-list"></ul>
+    </section>
+
+    <section id="bibliometrics">
+      <h2>Bibliometric Indicators</h2>
+      <table id="bibliometrics-table"></table>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul id="contact-list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Candidate Name</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
