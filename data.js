@@ -2,7 +2,18 @@ const cvData = {
   personal: {
     fullName: "Candidate Name",
     title: "Assistant Professor & Researcher",
-    summary: "Brief biography introducing the candidate, including research interests in IoT, cybersecurity and sensor networks.",
+    summary:`Dr. Mohammed Jouhari is an Assistant Professor of Computer Science at Ibn Tofail University, Faculty of Sciences (Kenitra, Morocco). 
+He received his Ph.D. in Computer Science from Ibn Tofail University in 2019, with a dissertation focused on underwater wireless sensor networks.
+
+His research interests include cybersecurity, Internet of Things (IoT), intrusion detection systems, distributed and federated learning, and intelligent networking. 
+He has co-authored numerous publications in leading IEEE and Elsevier journals and conferences, addressing challenges in lightweight security solutions for resource-constrained devices.
+
+Beyond research, Dr. Jouhari is actively engaged in the academic community as a reviewer for more than 20 international journals, 
+a member of technical program committees for major IEEE conferences (including Globecom, ICC, IWCMC, and WINCOM), and a session/track chair at international events. 
+Since 2025, he has served as an Editorial Board Member for Humanities and Social Sciences Communications (Springer Nature).
+
+He has also taught a wide range of courses in computer science and engineering, from cybersecurity and operating systems to cloud computing and digital culture, 
+mentoring both master’s and Ph.D. students. His work combines academic rigor with a strong commitment to capacity building and scientific collaboration, both nationally and internationally.`,
     contact: {
       email: "user@example.com",
       phone: "+00 000 000 0000",
