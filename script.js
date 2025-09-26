@@ -117,4 +117,91 @@ document.addEventListener('DOMContentLoaded', () => {
   const svc = document.getElementById('service-content');
   if (svc && cvData.services) {
     if (Array.isArray(cvData.services.editorialBoard)) {
-      const h3 = document.creat
+      const h3 = document.createElement('h3'); h3.textContent = 'Editorial Board Membership';
+      svc.appendChild(h3);
+      const ul = document.createElement('ul');
+      cvData.services.editorialBoard.forEach(x => {
+        const li = document.createElement('li');
+        li.textContent = `${x.role}, ${x.publication} (since ${x.since})`;
+        ul.appendChild(li);
+      });
+      svc.appendChild(ul);
+    }
+    if (Array.isArray(cvData.services.tpc)) {
+      const h3 = document.createElement('h3'); h3.textContent = 'Technical Program Committees';
+      svc.appendChild(h3);
+      const ul = document.createElement('ul');
+      cvData.services.tpc.forEach(x => {
+        const li = document.createElement('li');
+        li.textContent = `${x.event} — ${x.period}`;
+        ul.appendChild(li);
+      });
+      svc.appendChild(ul);
+    }
+  }
+
+  // teaching
+  const teachingList = document.getElementById('teaching-list');
+  if (teachingList && Array.isArray(cvData.teaching)) {
+    cvData.teaching.forEach(c => {
+      const li = document.createElement('li');
+      li.textContent = `${c.course} (${c.hours}h) — ${c.program}, ${c.institution} [${c.academicYear}]`;
+      teachingList.appendChild(li);
+    });
+  }
+
+  // bibliometrics
+  const bmTable = document.getElementById('bibliometrics-table');
+  if (bmTable && cvData.bibliometrics) {
+    bmTable.innerHTML = `
+      <tr><th>Indicator</th><th>Google Scholar</th><th>Scopus</th></tr>
+      <tr><td>Citations</td><td>${cvData.bibliometrics.googleScholar?.citations ?? '-'}</td><td>${cvData.bibliometrics.scopus?.citations ?? '-'}</td></tr>
+      <tr><td>h-index</td><td>${cvData.bibliometrics.googleScholar?.hIndex ?? '-'}</td><td>${cvData.bibliometrics.scopus?.hIndex ?? '-'}</td></tr>
+      <tr><td>i10-index</td><td>${cvData.bibliometrics.googleScholar?.i10Index ?? '-'}</td><td>–</td></tr>
+    `;
+  }
+
+  // --- single-section routing ---
+  const sections = Array.from(document.querySelectorAll('.section'));
+  const navLinks = Array.from(document.querySelectorAll('.navigation a'));
+
+  function setActiveSection(id, pushHash = true) {
+    const fallback = sections[0]?.id || null;
+    const targetId = id && document.getElementById(id) ? id : fallback;
+    if (!targetId) return;
+
+    sections.forEach(sec => {
+      const isActive = sec.id === targetId;
+      sec.classList.toggle('active', isActive);
+      sec.setAttribute('aria-hidden', String(!isActive));
+      if (isActive) {
+        const h = sec.querySelector('h2, h1, [role="heading"]');
+        if (h && h.focus) setTimeout(() => h.focus(), 0);
+      }
+    });
+
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('data-target') === targetId);
+    });
+
+    if (pushHash) {
+      const newHash = '#' + targetId;
+      if (location.hash !== newHash) history.pushState(null, '', newHash);
+    }
+  }
+
+  navLinks.forEach(a => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = a.getAttribute('data-target');
+      setActiveSection(target, true);
+    });
+  });
+
+  window.addEventListener('hashchange', () => {
+    setActiveSection(location.hash.replace('#', ''), false);
+  });
+
+  // Initial render (honor deep link; default to first section)
+  setActiveSection(location.hash.replace('#', ''), false);
+});
