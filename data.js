@@ -87,28 +87,43 @@ const cvData = {
   }
 ],
   education: [
-    {
-      degree: "PhD in Computer Science",
-      field: "Mathematics, Computer Science and Applications",
-      institution: "University of Example",
-      location: "City, Country",
-      start: "2014",
-      end: "2019",
-      thesisTitle: "Advances in Underwater Wireless Sensor Networks: improvements in MAC layer, topology control and routing",
-      supervisor: "Prof. Supervisor Name",
-      distinction: "Highest honors"
-    },
-    {
-      degree: "Master’s Degree",
-      field: "Computer Science, Signals and Telecommunications",
-      institution: "University of Example",
-      location: "City, Country",
-      start: "2011",
-      end: "2013",
-      distinction: "Fairly Good"
-    }
-    /* Additional education entries... */
-  ],
+  {
+    degree: "National PhD",
+    field: "Mathematics, Computer Science, and Applications",
+    institution: "Ibn Tofail University, Faculty of Sciences",
+    location: "Kenitra, Morocco",
+    start: "2014",
+    end: "2019",
+    thesisTitle: "Advances in Underwater Wireless Sensor Networks: Improvements in MAC Layer, Topology Control, and Geographic Routing Protocols.",
+    supervisor: "Prof. Khalil Ibrahimi",
+    distinction: "Highest honors with congratulations of the examination committee"
+  },
+  {
+    degree: "Master’s Degree",
+    field: "Computer Science, Signals, and Telecommunications (Research Track)",
+    institution: "Mohammed V University, Faculty of Sciences",
+    location: "Rabat, Morocco",
+    start: "2011",
+    end: "2013",
+    distinction: "Fairly Good"
+  },
+  {
+    degree: "Bachelor’s Degree",
+    field: "Fundamental Studies in Physics",
+    institution: "Mohammed V University, Faculty of Sciences",
+    location: "Rabat, Morocco",
+    start: "2009",
+    end: "2011"
+  },
+  {
+    degree: "Baccalaureate",
+    field: "Experimental Sciences",
+    institution: "Ibn Rochd High School",
+    location: "Temara, Morocco",
+    start: "2007",
+    end: "2008"
+  }
+],
   publications: {
     journals: [
       {
@@ -141,58 +156,160 @@ const cvData = {
     ]
   },
   services: {
-    editorialBoard: [
-      {
-        role: "Editorial Board Member",
-        publication: "Humanities and Social Sciences Communications",
-        since: "2025",
-        description: "Responsible for editorial decision‑making, peer review coordination and quality assurance of manuscripts"
-      }
-      /* Additional board roles... */
-    ],
-    peerReview: [
+  overview: "Extensive involvement in scientific evaluation, including editorial board membership, peer review for leading journals, technical program committee (TPC) service, and chairing conference sessions.",
+
+  editorialBoard: [
+    {
+      role: "Editorial Board Member",
+      publication: "Humanities and Social Sciences Communications (Springer Nature)",
+      since: "2025",
+      description: "Developed expertise in editorial decision making, peer review coordination, and quality assurance of manuscripts."
+    }
+  ],
+
+  peerReview: {
+    total: "More than 55 reviews",
+    focus: "Particularly in IoT, wireless networks, and cybersecurity.",
+    coreJournals: [
       { journal: "IEEE Internet of Things Journal", reviews: 11 },
-      { journal: "IEEE Access", reviews: 16 }
-      /* Additional peer review entries... */
+      { journal: "IEEE Access", reviews: 16 },
+      { journal: "IEEE Wireless Communications", reviews: 3 },
+      { journal: "IEEE Wireless Communications Letters", reviews: 3 },
+      { journal: "IEEE Internet of Things Magazine", reviews: 2 }
     ],
-    tpc: [
-      { event: "IEEE Globecom", period: "2024–2025" }
-      /* Additional TPC roles... */
-    ],
-    trackChair: [
-      {
-        event: "AI‑Driven Network Security and Anomaly Detection Workshop",
-        conference: "EngiTek",
-        year: 2025,
-        description: "Co‑organized workshop, chaired sessions and managed program"
-      }
-    ],
-    sessionChair: [
-      {
-        event: "International Wireless Communications and Mobile Computing Conference (IWCMC)",
-        session: "Online Session 20",
-        date: "May 30, 2024"
-      }
-      /* Additional session chair entries... */
+    otherJournals: [
+      "IEEE Transactions on Communications",
+      "IEEE Consumer Electronics",
+      "IEEE Industrial Informatics",
+      "IEEE Information Forensics and Security",
+      "IEEE Mobile Computing",
+      "IEEE Neural Networks and Learning Systems",
+      "IEEE Network and Service Management",
+      "IEEE Services Computing",
+      "IEEE Intelligent Transportation Systems",
+      "Computers & Security (3 reviews)",
+      "International Journal of Communication Systems (4 reviews)",
+      "and others"
     ]
   },
-  teaching: [
+
+  tpc: [
+    { event: "IEEE Globecom", period: "2024–2025" },
+    { event: "IEEE ICC", period: "Ongoing" },
+    { event: "IEEE IWCMC", period: "2023–2025" },
+    { event: "IEEE WINCOM", period: "2023–2025" },
+    { event: "CommNet", period: "2021–2024" }
+  ],
+
+  trackChair: [
     {
-      course: "Virtualization and Cloud Computing",
-      hours: 32,
-      program: "Master’s in Networks and Mobile Services",
-      institution: "University",
-      academicYear: "2024/2025"
+      event: "Online Workshop on AI-Driven Network Security and Anomaly Detection",
+      conference: "EngiTek 2025",
+      location: "Irbid, Jordan",
+      date: "29–31 December 2025",
+      website: "https://mohammed-jouhari.github.io/nsad2025/"
+    }
+  ],
+
+  sessionChair: [
+    {
+      event: "International Wireless Communications and Mobile Computing Conference (IWCMC)",
+      session: "Online Session 20",
+      date: "May 30, 2024"
     },
     {
-      course: "Unix Operating Systems",
-      hours: 32,
-      program: "3rd year Computer Engineering and Networks",
-      institution: "Engineering School",
-      academicYear: "2023/2024"
+      event: "11th International Conference on Wireless Networks and Mobile Communications (WINCOM)",
+      session: "TS8",
+      date: "July 25, 2024"
     }
-    /* Additional courses... */
-  ],
+  ]
+},
+  teaching: [
+  {
+    course: "Virtualization and Cloud Computing",
+    hours: 32,
+    program: "Master’s in Networks and Mobile Services",
+    institution: "Faculty of Sciences, Ibn Tofail University, Kenitra",
+    academicYear: "2024/2025"
+  },
+  {
+    course: "Digital Culture",
+    hours: 24,
+    program: "Bachelor’s in Fundamental Studies",
+    institution: "Faculty of Law and Political Science, Ibn Tofail University, Kenitra",
+    academicYear: "2024/2025"
+  },
+  {
+    course: "Unix Operating Systems",
+    hours: 32,
+    program: "3rd year Computer Engineering and Networks",
+    institution: "EMSI Tangier",
+    academicYear: "2023/2024"
+  },
+  {
+    course: "Application Security",
+    hours: 32,
+    program: "4th year Computer Engineering and Networks",
+    institution: "EMSI Tangier",
+    academicYear: "2023/2024"
+  },
+  {
+    course: "Virtualization",
+    hours: 24,
+    program: "4th year Computer Engineering and Networks",
+    institution: "EMSI Tangier",
+    academicYear: "2023/2024"
+  },
+  {
+    course: "Information Systems Design",
+    hours: 24,
+    program: "3rd year Computer Engineering and Networks",
+    institution: "EMSI Tangier",
+    academicYear: "2023/2024"
+  },
+  {
+    course: "Case Study: UML",
+    hours: 32,
+    program: "4th year Computer Engineering and Networks",
+    institution: "EMSI Tangier",
+    academicYear: "2023/2024"
+  },
+  {
+    course: "Information Systems Governance",
+    hours: 32,
+    program: "5th year Computer Engineering and Networks",
+    institution: "EMSI Tangier",
+    academicYear: "2023/2024"
+  },
+  {
+    course: "Cross-Platform Development",
+    hours: 32,
+    program: "5th year Computer Engineering and Networks",
+    institution: "EMSI Tangier",
+    academicYear: "2023/2024"
+  },
+  {
+    course: "Data Security",
+    hours: "18h in 2021/2022; 32h in 2019/2020; 32h in 2017/2018",
+    program: "Master’s in Software Engineering for Cloud Computing",
+    institution: "Ibn Tofail University, Kenitra"
+  },
+  {
+    course: "VoIP",
+    hours: 28,
+    program: "Bachelor’s in Networks and Telecommunications",
+    institution: "Ibn Tofail University, Kenitra",
+    academicYear: "2021/2022"
+  },
+  {
+    course: "IPv6",
+    hours: 28,
+    program: "Bachelor’s in Networks and Telecommunications",
+    institution: "Ibn Tofail University, Kenitra",
+    academicYear: "2017/2018"
+  }
+]
+,
   bibliometrics: {
     googleScholar: { citations: 1156, hIndex: 14, i10Index: 18 },
     scopus: { citations: 796, hIndex: 10 },
