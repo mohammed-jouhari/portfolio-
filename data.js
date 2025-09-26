@@ -128,36 +128,287 @@ const cvData = {
   ],
 
   publications: {
-    journals: [
-      {
-        authors: "First Author, Candidate Name, Co-Author",
-        title: "A lightweight hybrid approach for intrusion detection systems using a chi-square feature selection approach in IoT",
-        venue: "Internet of Things",
-        year: 2025,
-        details: {
-          volume: 32,
-          pages: "101624",
-          impactFactor: 7.6,
-          doi: "https://doi.org/10.1016/j.iot.2025.101624"
-        }
+  journals: [
+    {
+      authors: "Hafsa Benaddi; Mohammed Jouhari; Omar Elharrouss",
+      title: "A lightweight hybrid approach for intrusion detection systems using a chi-square feature selection approach in IoT",
+      venue: "Internet of Things",
+      year: 2025,
+      details: {
+        volume: 32,
+        pages: "101624",
+        doi: "https://doi.org/10.1016/j.iot.2025.101624",
+        url: "https://www.sciencedirect.com/science/article/pii/S2542660525001386",
+        impactFactor: 7.6
       }
-      // Additional journal articles…
-    ],
-    conferences: [
-      {
-        authors: "Candidate Name, Co-Author",
-        title: "Efficient intrusion detection: Combining χ2 feature selection with CNN-BiLSTM on the UNSW-NB15 dataset",
-        venue: "International Conference on Wireless Networks and Mobile Communications (WINCOM)",
-        location: "City, Country",
-        year: 2024,
-        details: {
-          pages: "1–6",
-          doi: "10.1109/WINCOM62286.2024.10658099"
-        }
+    },
+    {
+      authors: "Mohammed Jouhari; El Mehdi Amhoud; Nasir Saeed; Mohamed-Slim Alouini",
+      title: "A Survey on Scalable LoRaWAN for Massive IoT: Recent Advances, Potentials, and Challenges",
+      venue: "IEEE Communications Surveys & Tutorials",
+      year: 2022,
+      details: {
+        volume: 25,
+        number: 3,
+        pages: "1841–1876",
+        doi: "10.1109/COMST.2023.3274934",
+        url: "https://ieeexplore.ieee.org/abstract/document/10122600",
+        impactFactor: 33.84
       }
-      // Additional conference papers…
-    ]
-  },
+    },
+    {
+      authors: "H. Benaddi; Mohammed Jouhari; K. Ibrahimi; J. Ben Othman; A. Benslimane; El Mehdi Amhoud",
+      title: "Anomaly Detection in Industrial IoT using Distributional Reinforcement Learning and Generative Adversarial Networks",
+      venue: "Sensors",
+      year: 2022,
+      details: {
+        volume: 22,
+        number: 21,
+        pages: "8085",
+        doi: "10.3390/s22218085",
+        url: "https://www.mdpi.com/1424-8220/22/21/8085",
+        impactFactor: 3.847
+      }
+    },
+    {
+      authors: "H. Benaddi; K. Ibrahimi; A. Benslimane; Mohammed Jouhari; J. Qadir",
+      title: "Robust Enhancement of Intrusion Detection Systems Using Deep Reinforcement Learning and Stochastic Game Approaches",
+      venue: "IEEE Transactions on Vehicular Technology",
+      year: 2022,
+      details: {
+        volume: 71,
+        number: 10,
+        pages: "11089–11102",
+        doi: "10.1109/TVT.2022.3186834",
+        url: "https://ieeexplore.ieee.org/abstract/document/9809923",
+        impactFactor: 5.978
+      }
+    },
+    {
+      authors: "Mohammed Jouhari; A. Al-Ali; E. Baccour; A. Mohamed; A. Erbad; M. Guizani; M. Hamdi",
+      title: "Distributed CNN Inference on Resource-Constrained UAVs for Surveillance Systems: Design and Optimization",
+      venue: "IEEE Internet of Things Journal",
+      year: 2021,
+      details: {
+        volume: 9,
+        number: 2,
+        pages: "1227–1242",
+        doi: "10.1109/JIOT.2021.3079164",
+        url: "https://ieeexplore.ieee.org/abstract/document/9428021",
+        impactFactor: 9.936
+      }
+    },
+    {
+      authors: "Mohammed Jouhari; K. Ibrahimi; H. Tembine; J. Ben-Othman",
+      title: "Underwater Wireless Sensor Networks: A Survey on Enabling Technologies, Localization Protocols, and Internet of Underwater Things",
+      venue: "IEEE Access",
+      year: 2019,
+      details: {
+        volume: 7,
+        pages: "96879–96899",
+        doi: "10.1109/ACCESS.2019.2928876",
+        url: "https://ieeexplore.ieee.org/abstract/document/8763947",
+        impactFactor: 4.098
+      }
+    },
+    {
+      authors: "Mohammed Jouhari; K. Ibrahimi; H. Tembine; J. Ben-Othman",
+      title: "Signaling Game Approach to Improve the MAC Protocol in the Underwater Wireless Sensor Networks",
+      venue: "International Journal of Communication Systems",
+      year: 2019,
+      details: {
+        volume: 32,
+        number: 13,
+        pages: "e3971",
+        doi: "10.1002/dac.3971",
+        url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/dac.3971",
+        impactFactor: 1.278
+      }
+    }
+  ],
+
+  conferences: [
+    {
+      authors: "A. Serhane; K. Ibrahimi; E. Hamzaoui; Mohammed Jouhari; J. Ben-Othman",
+      title: "IoT Intrusion Detection Using Machine Learning Classifiers and PCA Dimensionality Reduction for N-BaIoT dataset",
+      venue: "IEEE GLOBECOM",
+      location: "Cape Town, South Africa",
+      year: 2024,
+      details: { status: "Submitted" }
+    },
+    {
+      authors: "Khalil Ibrahimi; Mohammed Jouhari; Zineb Jakout",
+      title: "Enhancing Intrusion Detection Systems Using Machine Learning Classifiers on the CSE-CIC-IDS2018 Dataset",
+      venue: "WINCOM 2024",
+      year: 2024,
+      details: {
+        pages: "1–6",
+        doi: "10.1109/WINCOM62286.2024.10655131"
+      }
+    },
+    {
+      authors: "Mohammed Jouhari; Hafsa Benaddi; Khalil Ibrahimi",
+      title: "Efficient Intrusion Detection: Combining X2 Feature Selection with CNN-BiLSTM on the UNSW-NB15 Dataset",
+      venue: "WINCOM 2024",
+      year: 2024,
+      details: {
+        pages: "1–6",
+        doi: "10.1109/WINCOM62286.2024.10658099"
+      }
+    },
+    {
+      authors: "Mohammed Jouhari; M. Guizani",
+      title: "Lightweight CNN-BiLSTM based Intrusion Detection Systems for Resource-Constrained IoT Devices",
+      venue: "IEEE IWCMC",
+      location: "Ayia Napa, Cyprus",
+      year: 2024,
+      details: {
+        doi: "10.1109/IWCMC61514.2024.10592352",
+        url: "https://ieeexplore.ieee.org/document/10592352"
+      }
+    },
+    {
+      authors: "H. Benaddi; Mohammed Jouhari; K. Ibrahimi; A. Benslimane; El Mehdi Amhoud",
+      title: "Improvement of Anomaly Detection System in the IoT Networks using CNN-LSTM Approach",
+      venue: "IEEE GLOBECOM",
+      location: "Kuala Lumpur, Malaysia",
+      year: 2023,
+      details: {
+        doi: "10.1109/GLOBECOM54140.2023.10437475",
+        url: "https://ieeexplore.ieee.org/document/10437475"
+      }
+    },
+    {
+      authors: "El Mehdi Amhoud; Mohammed Jouhari; T. Maksymyuk; K. Zerhouni; K. Ibrahimi",
+      title: "Conditional Generative Adversarial Networks for Rx-to-Tx Translation in Wireless Communication Systems",
+      venue: "IEEE GLOBECOM",
+      location: "Kuala Lumpur, Malaysia",
+      year: 2023,
+      details: {
+        doi: "10.1109/GLOBECOM54140.2023.10437739",
+        url: "https://ieeexplore.ieee.org/document/10437739"
+      }
+    },
+    {
+      authors: "Y. Etiabi; Mohammed Jouhari; A. Burg; El Mehdi Amhoud",
+      title: "Spreading Factor assisted LoRa Localization with Deep Reinforcement Learning",
+      venue: "IEEE 97th VTC (Spring)",
+      location: "Florence, Italy",
+      year: 2023,
+      details: {
+        doi: "10.1109/VTC2023-Spring57618.2023.10200189",
+        url: "https://ieeexplore.ieee.org/document/10200189"
+      }
+    },
+    {
+      authors: "Mohammed Jouhari; K. Ibrahimi; J. Ben Othman; El Mehdi Amhoud",
+      title: "Deep Reinforcement Learning-based Energy Efficiency Optimization For Flying LoRa Gateways",
+      venue: "IEEE ICC",
+      location: "Rome, Italy",
+      year: 2023,
+      details: {
+        doi: "10.1109/ICC45041.2023.10279198",
+        url: "https://ieeexplore.ieee.org/document/10279198"
+      }
+    },
+    {
+      authors: "H. Benaddi; Mohammed Jouhari; El Mehdi Amhoud; K. Ibrahimi; A. Benslimane",
+      title: "Adversarial Attacks Against IoT Networks using Conditional GAN based Learning",
+      venue: "IEEE GLOBECOM",
+      location: "Rio de Janeiro, Brazil",
+      year: 2022,
+      details: {
+        doi: "10.1109/GLOBECOM48099.2022.10000726",
+        url: "https://ieeexplore.ieee.org/abstract/document/10000726"
+      }
+    },
+    {
+      authors: "B. Jebari; Mohammed Jouhari; K. Ibrahimi",
+      title: "Analysis of Blockchain Selfish Mining: a Stochastic Game Approach",
+      venue: "IEEE ICC",
+      location: "Seoul, South Korea",
+      year: 2022,
+      details: {
+        doi: "10.1109/ICC45855.2022.9839233",
+        url: "https://ieeexplore.ieee.org/abstract/document/9839233"
+      }
+    },
+    {
+      authors: "H. Zradgui; Mohammed Jouhari; K. Ibrahimi",
+      title: "Decentralized Autonomous Underwater Vehicles Distribution for IPv6-UWSN: A Study With Heuristic Methods",
+      venue: "CommNet 2021",
+      location: "Kenitra, Morocco",
+      year: 2021,
+      details: {
+        doi: "10.1109/CommNet52204.2021.9641903",
+        url: "https://ieeexplore.ieee.org/abstract/document/9641903"
+      }
+    },
+    {
+      authors: "M. Ammar; K. Ibrahimi; Mohammed Jouhari; J. Ben-Othman",
+      title: "MAC Protocol-Based Depth Adjustment And Splitting Mechanism For UnderWater Sensor Network (UWSN)",
+      venue: "IEEE GLOBECOM",
+      location: "Abu Dhabi, UAE",
+      year: 2018,
+      details: {
+        doi: "10.1109/GLOCOM.2018.8647644",
+        url: "https://ieeexplore.ieee.org/abstract/document/8647644"
+      }
+    },
+    {
+      authors: "I. Rouam; K. Ibrahimi; Mohammed Jouhari",
+      title: "Best Association of Macro User in Two-Tier Cellular Networks",
+      venue: "WINCOM",
+      location: "Rabat, Morocco",
+      year: 2017,
+      details: {
+        doi: "10.1109/WINCOM.2017.8238157",
+        url: "https://ieeexplore.ieee.org/abstract/document/8238157"
+      }
+    },
+    {
+      authors: "Mohammed Jouhari; K. Ibrahimi; M. Benattou; A. Kobbane",
+      title: "New Greedy Forwarding Strategy for UWSNs Geographic Routing Protocols",
+      venue: "IWCMC",
+      location: "Paphos, Cyprus",
+      year: 2016,
+      details: {
+        doi: "10.1109/IWCMC.2016.7577089",
+        url: "https://ieeexplore.ieee.org/abstract/document/7577089"
+      }
+    },
+    {
+      authors: "Mohammed Jouhari; K. Ibrahimi; M. Benattou",
+      title: "Topology Control Through Depth Adjustment and Transmission Power Control For UWSN Routing Protocols",
+      venue: "WINCOM",
+      location: "Marrakech, Morocco",
+      year: 2015,
+      details: {
+        doi: "10.1109/WINCOM.2015.7381310",
+        url: "https://ieeexplore.ieee.org/abstract/document/7381310"
+      }
+    }
+  ],
+
+  bookChapters: [
+    {
+      authors: "Mohammed Jouhari; K. Ibrahimi; M. Benattou",
+      title: "Implementation of Bit Error Rate Model of 16-QAM in Aqua-Sim Simulator for Underwater Sensor Networks",
+      bookTitle: "Advances in Ubiquitous Networking 2",
+      series: "Lecture Notes in Electrical Engineering",
+      volume: 397,
+      editors: "Rachid El-Azouzi; Daniel Sadoc Menasche; Essaïd Sabir; Francesco De Pellegrini; Mustapha Benjillali",
+      pages: "123–134",
+      publisher: "Springer, Singapore",
+      year: 2016,
+      details: {
+        doi: "10.1007/978-981-10-1627-1_10",
+        isbn: "978-981-10-1626-4",
+        url: "https://link.springer.com/chapter/10.1007/978-981-10-1627-1_10"
+      }
+    }
+  ]
+},
 
   services: {
     overview:
