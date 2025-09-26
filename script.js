@@ -111,6 +111,30 @@ document.addEventListener('DOMContentLoaded', () => {
       section.appendChild(ul);
       pubs.appendChild(section);
     }
+    // Book Chapters
+    if (cvData.publications.bookChapters && cvData.publications.bookChapters.length) {
+      const section = document.createElement('div');
+      const h3 = document.createElement('h3'); h3.textContent = 'Book Chapters';
+      section.appendChild(h3);
+    
+      const ul = document.createElement('ul');
+      cvData.publications.bookChapters.forEach(ch => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${ch.authors}</strong>. “${ch.title}.” In <em>${ch.bookTitle}</em>, ${ch.publisher} (${ch.year}).`;
+        const more = [];
+        if (ch.series) more.push(ch.series);
+        if (ch.volume) more.push(`Vol. ${ch.volume}`);
+        if (ch.pages) more.push(`pp. ${ch.pages}`);
+        if (ch.details?.doi) more.push(`<a href="${ch.details.doi}" target="_blank">DOI</a>`);
+        if (ch.details?.url) more.push(`<a href="${ch.details.url}" target="_blank">Link</a>`);
+        if (more.length) li.innerHTML += ` ${more.join(', ')}`;
+        ul.appendChild(li);
+      });
+    
+      section.appendChild(ul);
+      pubs.appendChild(section);
+    }
+
   }
 
   // services
