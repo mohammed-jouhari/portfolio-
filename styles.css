@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #2a4d69;
+  --secondary-color: #4b86b4;
+  --accent-color: #adcbe3;
+  --text-color: #333;
+  --light-color: #f5f5f5;
+  --max-width: 900px;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--light-color);
+}
+
+header.hero {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.hero .subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+.navigation a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main section {
+  margin: 40px 0;
+}
+
+main h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* timeline styling */
+.timeline {
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 9px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--secondary-color);
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.timeline-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.date-range {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.timeline-item p {
+  margin: 5px 0 0 0;
+  font-size: 0.95rem;
+}
+
+/* other styles omitted for brevity */
