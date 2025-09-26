@@ -1,6 +1,6 @@
 const cvData = {
   personal: {
-    fullName: "Candidate Name",
+    fullName: "Mohammed Jouhari",
     title: "Assistant Professor & Researcher",
     summary:`Dr. Mohammed Jouhari is an Assistant Professor of Computer Science at Ibn Tofail University, Faculty of Sciences (Kenitra, Morocco). 
 He received his Ph.D. in Computer Science from Ibn Tofail University in 2019, with a dissertation focused on underwater wireless sensor networks.
@@ -16,7 +16,6 @@ He has also taught a wide range of courses in computer science and engineering, 
 mentoring both master’s and Ph.D. students. His work combines academic rigor with a strong commitment to capacity building and scientific collaboration, both nationally and internationally.`,
     contact: {
       email: "user@example.com",
-      phone: "+00 000 000 0000",
       linkedin: "https://linkedin.com/in/username",
       googleScholar: "https://scholar.google.com/citations?user=xyz",
       scopus: "https://www.scopus.com/authid/detail.uri?authorId=00000000000",
