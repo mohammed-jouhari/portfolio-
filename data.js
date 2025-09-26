@@ -1,0 +1,157 @@
+const cvData = {
+  personal: {
+    fullName: "Candidate Name",
+    title: "Assistant Professor & Researcher",
+    summary: "Brief biography introducing the candidate, including research interests in IoT, cybersecurity and sensor networks.",
+    contact: {
+      email: "user@example.com",
+      phone: "+00 000 000 0000",
+      linkedin: "https://linkedin.com/in/username",
+      googleScholar: "https://scholar.google.com/citations?user=xyz",
+      scopus: "https://www.scopus.com/authid/detail.uri?authorId=00000000000",
+      orcid: "https://orcid.org/0000-0000-0000-0000"
+    }
+  },
+  professionalExperience: [
+    {
+      title: "Assistant Professor",
+      organization: "Faculty of Sciences, University",
+      location: "City, Country",
+      start: "2024",
+      end: "Present",
+      details: [
+        "Teach courses in cybersecurity, distributed systems and intelligent networks",
+        "Supervise Master’s theses and doctoral dissertations",
+        "Engage in IoT and sensor‑network research projects"
+      ]
+    },
+    {
+      title: "Assistant Professor",
+      organization: "Engineering School",
+      location: "City, Country",
+      start: "2023",
+      end: "2024",
+      details: [
+        "Delivered courses on Unix systems, application security and virtualization",
+        "Supervised undergraduate final‑year projects",
+        "Contributed to curriculum development and innovative teaching methods"
+      ]
+    }
+    /* Additional experience entries... */
+  ],
+  education: [
+    {
+      degree: "PhD in Computer Science",
+      field: "Mathematics, Computer Science and Applications",
+      institution: "University of Example",
+      location: "City, Country",
+      start: "2014",
+      end: "2019",
+      thesisTitle: "Advances in Underwater Wireless Sensor Networks: improvements in MAC layer, topology control and routing",
+      supervisor: "Prof. Supervisor Name",
+      distinction: "Highest honors"
+    },
+    {
+      degree: "Master’s Degree",
+      field: "Computer Science, Signals and Telecommunications",
+      institution: "University of Example",
+      location: "City, Country",
+      start: "2011",
+      end: "2013",
+      distinction: "Fairly Good"
+    }
+    /* Additional education entries... */
+  ],
+  publications: {
+    journals: [
+      {
+        authors: "First Author, Candidate Name, Co‑Author",
+        title: "A lightweight hybrid approach for intrusion detection systems using a chi‑square feature selection approach in IoT",
+        venue: "Internet of Things",
+        year: 2025,
+        details: {
+          volume: 32,
+          pages: "101624",
+          impactFactor: 7.6,
+          doi: "https://doi.org/10.1016/j.iot.2025.101624"
+        }
+      }
+      /* Additional journal articles... */
+    ],
+    conferences: [
+      {
+        authors: "Candidate Name, Co‑Author",
+        title: "Efficient intrusion detection: Combining χ2 feature selection with CNN‑BiLSTM on the UNSW‑NB15 dataset",
+        venue: "International Conference on Wireless Networks and Mobile Communications (WINCOM)",
+        location: "City, Country",
+        year: 2024,
+        details: {
+          pages: "1–6",
+          doi: "10.1109/WINCOM62286.2024.10658099"
+        }
+      }
+      /* Additional conference papers... */
+    ]
+  },
+  services: {
+    editorialBoard: [
+      {
+        role: "Editorial Board Member",
+        publication: "Humanities and Social Sciences Communications",
+        since: "2025",
+        description: "Responsible for editorial decision‑making, peer review coordination and quality assurance of manuscripts"
+      }
+      /* Additional board roles... */
+    ],
+    peerReview: [
+      { journal: "IEEE Internet of Things Journal", reviews: 11 },
+      { journal: "IEEE Access", reviews: 16 }
+      /* Additional peer review entries... */
+    ],
+    tpc: [
+      { event: "IEEE Globecom", period: "2024–2025" }
+      /* Additional TPC roles... */
+    ],
+    trackChair: [
+      {
+        event: "AI‑Driven Network Security and Anomaly Detection Workshop",
+        conference: "EngiTek",
+        year: 2025,
+        description: "Co‑organized workshop, chaired sessions and managed program"
+      }
+    ],
+    sessionChair: [
+      {
+        event: "International Wireless Communications and Mobile Computing Conference (IWCMC)",
+        session: "Online Session 20",
+        date: "May 30, 2024"
+      }
+      /* Additional session chair entries... */
+    ]
+  },
+  teaching: [
+    {
+      course: "Virtualization and Cloud Computing",
+      hours: 32,
+      program: "Master’s in Networks and Mobile Services",
+      institution: "University",
+      academicYear: "2024/2025"
+    },
+    {
+      course: "Unix Operating Systems",
+      hours: 32,
+      program: "3rd year Computer Engineering and Networks",
+      institution: "Engineering School",
+      academicYear: "2023/2024"
+    }
+    /* Additional courses... */
+  ],
+  bibliometrics: {
+    googleScholar: { citations: 1156, hIndex: 14, i10Index: 18 },
+    scopus: { citations: 796, hIndex: 10 },
+    profiles: {
+      googleScholar: "https://scholar.google.com/citations?user=xyz",
+      scopus: "https://www.scopus.com/authid/detail.uri?authorId=00000000000"
+    }
+  }
+};
